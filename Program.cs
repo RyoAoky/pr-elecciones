@@ -26,4 +26,5 @@ app.MapControllerRoute(
 app.MapControllerRoute(
     name: "login",
     pattern: "{controller=Login}/{action=Login}");
+app.UseStaticFiles();
 app.Run();

@@ -2,56 +2,151 @@
     ViewData["Title"] = "Login";
 }
 @section Scripts{
-    <link href="~/css/"/>
+    <link rel="stylesheet" href="~/css/phone.css" />
+    <script src="~/js/main.js" type="module"></script>
+    <script src="~/js/auth_phone.js" type="module"></script>
 }
 
-<br/>
-<div>
-    <form id="singup">
-        <div class="card">
-            <div class="card-header">
-                LOGIN
-            </div>
-            <div class="card-body">
-                <form>
-                    <div class="form-check form-check-inline">
-                        <input type="tel" class="form-control" pattern="[0-9]" rows="1" maxlength="9" />
+    <br />
+    <div class="text-center">
+        <div class="andes-card andes-card--flat validation__card andes-card--padding-32">
+            <h2 class="validation__title">Ingrese el código de verificación</h2>
+            <p2 class="validation__description">Escribe el código enviado a su número de celular:</p2>
+            <form id="singup">
+                <div class="andes-form-control--numeric input-code" role="group">
+                    <div class="andes-form-control--numeric-wrapper">
+                        <div class="andes-form-control__textfield-space">
+                            <div class="andes-form-control andes-form-control--textfield  andes-form-control--default " id="div-digit-0">
+                                <div class="andes-form-control__control ">
+                                    <input type="tel" class="andes-form-control__field" aria-label="Digito 1" pattern="[0-9]*" value="" id="digit-0" rows="1" maxlength="1">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="andes-form-control__textfield-space">
+                            <div class="andes-form-control andes-form-control--textfield andes-form-control--default" id="div-digit-1">
+                                <div class="andes-form-control__control">
+                                    <input type="tel" class="andes-form-control__field" aria-label="Digito 2" pattern="[0-9]*" value="" id="digit-1" rows="1" maxlength="1">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="andes-form-control__textfield-space">
+                            <div class="andes-form-control andes-form-control--textfield andes-form-control--default" id="div-digit-2">
+                                <div class="andes-form-control__control">
+                                    <input type="tel" class="andes-form-control__field" aria-label="Digito 3" pattern="[0-9]*" value="" id="digit-2" rows="1" maxlength="1">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="andes-form-control__textfield-space">
+                            <div class="andes-form-control andes-form-control--textfield andes-form-control--default" id="div-digit-3">
+                                <div class="andes-form-control__control">
+                                    <input type="tel" class="andes-form-control__field" aria-label="Digito 4" pattern="[0-9]*" value="" id="digit-3" rows="1" maxlength="1">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="andes-form-control__textfield-space">
+                            <div class="andes-form-control andes-form-control--textfield andes-form-control--default" id="div-digit-4">
+                                <div class="andes-form-control__control">
+                                    <input type="tel" class="andes-form-control__field" aria-label="Digito 5" pattern="[0-9]*" value="" id="digit-4" rows="1" maxlength="1">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="andes-form-control__textfield-space">
+                            <div class="andes-form-control andes-form-control--textfield andes-form-control--default" id="div-digit-5">
+                                <div class="andes-form-control__control">
+                                    <input type="tel" class="andes-form-control__field" aria-label="Digito 6" pattern="[0-9]*" value="" id="digit-5" rows="1" maxlength="1">
+                                </div>
+                            </div>
+                        </div>
+
+
+
                     </div>
-                    <div class="row-cols-auto">
-                        <br />
-                        <button type="submit" class="btn btn-primary text-center align-content-center">Ingresar</button>
-                    </div>
-                </form>
-            </div>
+                </div>
+            </form>
         </div>
-    </form>
-</div>
+    </div>
+    <!--
+    <form method="POST">
+        <input type="hidden" name="_csrf" value="iEfUBVzW-U0-Ze38Ko3Ujs8aE8-mZ6JVRsvg">
+        <div class="andes-form-control--numeric input-code" role="group">
+            <div class="andes-form-control--numeric-wrapper">
+                
 
-<!--
-    <div class="row-cols-3">
-        <input type="text" id="user" class="form-control" placeholder="email" required/>
-    </div><br/>
-    <div class="row-cols-3">
-        <input type="password" id="pass" class="form-control" placeholder="password" required/>
-    </div><br/>
-    -->
-<!-- Button trigger modal
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-    Launch demo modal
-</button>
-
- Modal
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="andes-form-control__textfield-space">
+                    <div class="andes-form-control andes-form-control--textfield andes-form-control--default">
+                        <div class="andes-form-control__control"><input type="tel" class="andes-form-control__field" aria-label="Digito 2" pattern="[0-9]*" value="" id="digit-1" rows="1"></div>
+                    </div>
+                </div>
+                <div class="andes-form-control__textfield-space andes-form-control__textfield-space--big">
+                    <div class="andes-form-control andes-form-control--textfield andes-form-control--default">
+                        <div class="andes-form-control__control"><input type="tel" class="andes-form-control__field" aria-label="Digito 3" pattern="[0-9]*" value="" id="digit-2" rows="1"></div>
+                    </div>
+                </div>
+                <div class="andes-form-control__textfield-space">
+                    <div class="andes-form-control andes-form-control--textfield andes-form-control--default">
+                        <div class="andes-form-control__control"><input type="tel" class="andes-form-control__field" aria-label="Digito 4" pattern="[0-9]*" value="" id="digit-3" rows="1"></div>
+                    </div>
+                </div>
+                <div class="andes-form-control__textfield-space">
+                    <div class="andes-form-control andes-form-control--textfield andes-form-control--default">
+                        <div class="andes-form-control__control"><input type="tel" class="andes-form-control__field" aria-label="Digito 5" pattern="[0-9]*" value="" id="digit-4" rows="1"></div>
+                    </div>
+                </div>
+                <div class="andes-form-control__textfield-space">
+                    <div class="andes-form-control andes-form-control--textfield andes-form-control--default">
+                        <div class="andes-form-control__control"><input type="tel" class="andes-form-control__field" aria-label="Digito 6" pattern="[0-9]*" value="" id="digit-5" rows="1"></div>
+                    </div>
+                </div>
             </div>
-            <div class="modal-body">
+            <div class="andes-form-control__bottom">
+                <div class="andes-form-control__message"></div>
+            </div>
+        </div><button type="submit" class="andes-button code-confirm andes-button--large andes-button--loud andes-button--disabled" disabled=""><span class="andes-button__content">Continuar</span></button>
+    </form>
+    -->
+    <!--
+            <div class="row-cols-3">
+                <input type="text" id="user" class="form-control" placeholder="email" required/>
+            </div><br/>
+            <div class="row-cols-3">
+                <input type="password" id="pass" class="form-control" placeholder="password" required/>
+            </div><br/>
+            -->
+    <!-- Button trigger modal
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Launch demo modal
+    </button>
 
+     Modal
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                </div>
             </div>
         </div>
     </div>
-</div>
--->
+    -->
+    <!--
+               <div class="card">
+                   <div class="card-header">
+                       LOGIN
+                   </div>
+                   <div class="card-body">
+                       <form>
+                           <div class="form-check form-check-inline">
+                               <input type="tel" class="form-control" pattern="[0-9]" rows="1" maxlength="9"/>
+                           </div>
+                           <div class="row-cols-auto">
+                               <br/>
+                               <button type="submit" class="btn btn-primary text-center align-content-center">Ingresar</button>
+                           </div>
+                       </form>
+                   </div>
+               </div>
+               -->
